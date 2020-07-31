@@ -21,7 +21,7 @@ def remove_strawberry(contacts)
       #binding.pry
       details_hash.each do |detail , data|
         binding.pry
-        if detail == ":favorite_ice_cream_flavors"
+        if detail == :favorite_ice_cream_flavors
           #binding.pry
           data.delete_if {|ice_cream|
             ice_cream == "strawberry"}
