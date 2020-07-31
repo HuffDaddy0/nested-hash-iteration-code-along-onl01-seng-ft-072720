@@ -20,9 +20,8 @@ def remove_strawberry(contacts)
       details_hash.each do |detail , data|
         if detail == "favorite_ice_cream_flavors:"
           binding.pry
-          data.delete_if do |ice_cream|
-            ice_cream == "strawberry"
-          end
+          data.delete_if {|ice_cream|
+            ice_cream == "strawberry"}
         end
       end
     end
